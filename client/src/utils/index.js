@@ -1,6 +1,6 @@
 export default class Utils  {
     static getThumbnail(pathname){
-        return [window.origin.replace(/:3001/g,':3000'),pathname].join("/")
+        return [window.origin,pathname].join("/")
     }
     static getToken(type = 'get',token = null) {
         try {

@@ -1,7 +1,8 @@
 import axios from 'axios'
 import Utils from "."; // function Logout in redux action
 
-const ROOT_API = window.origin.replace(/:300(0|1|2|3|4|5)/g,":3000"); // window.origin https://heroku
+const ROOT_API = window.origin
+// .replace(/:300(0|1|2|3|4|5)/g,":3000"); // window.origin https://heroku
 
 let TOKEN = null;
 if (localStorage.getItem("token")) {

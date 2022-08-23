@@ -30,7 +30,7 @@ const fileFilter = (req, file, cb) => {
 const uploadMiddleware = multer({
   storage: storage,
   limits: {
-    fileSize: 200000,
+    fileSize: 100000,
   },
   fileFilter: fileFilter,
 }).single("image")
