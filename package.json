@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "build:client": "./client npm run build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install"
+    "heroku-postbuild": "NODE_ENV=PRODUCTION NPM_CONFIG_PRODUCTION=false npm install"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
