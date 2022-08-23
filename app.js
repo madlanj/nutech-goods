@@ -53,9 +53,9 @@ app.get("/public/:folder/:file", async (req,res,next)=> {
 
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
-app.get('/', (req, res) => {
-  res.json({message: 'Welcome to API Nutech Goods'})
-})
+// app.get('/', (req, res) => {
+//   res.json({message: 'Welcome to API Nutech Goods'})
+// })
 app.use(`${URL}`, authRouter);
 app.use(`${URL}`, goodsRouter);
 
