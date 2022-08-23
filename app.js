@@ -60,9 +60,9 @@ app.use(`${URL}`, authRouter);
 app.use(`${URL}`, goodsRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
 
 if(process.env.NODE_ENV === "production"){
   app.use(express.static("client/build"));
