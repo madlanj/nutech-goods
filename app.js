@@ -31,7 +31,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json())
 app.get("/public/:folder/:file", async (req,res,next)=> {
   console.log(req.url,"URLL")
